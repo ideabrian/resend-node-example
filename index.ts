@@ -1,6 +1,9 @@
 import { Resend } from 'resend';
 const resend = new Resend('re_123456789');
 
+// from: name / email - can be anything
+//   to: should be the email on your account - for testing.
+
 (async function() {
   try {
     const data = await resend.emails.send({
